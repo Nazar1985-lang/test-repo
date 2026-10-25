@@ -5,7 +5,7 @@ def main():
     engine = TradingEngine()
 
     engine.start()
-
+    engine.run(max_ticks=3)
     # Імітуємо досягнення денного ліміту збитку
     engine.risk_manager.add_daily_loss(300)
 
